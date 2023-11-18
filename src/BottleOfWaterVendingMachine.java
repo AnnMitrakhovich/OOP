@@ -32,6 +32,11 @@ public class BottleOfWaterVendingMachine implements VendingMashine {
         return null;
     }
 
+    @Override
+    public Product getProduct(String name, double volume, int temterature) {
+        return null;
+    }
+
     public void addBottleOfWater(BottleOfWater bottleOfWater) {
         this.bottleOfWaters.add(bottleOfWater);
     }

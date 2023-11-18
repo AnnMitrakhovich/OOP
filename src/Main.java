@@ -16,7 +16,7 @@ public class Main {
         BottleOfWater bottle1 = new BottleOfWater("bottle1", 5, 0.5);
         System.out.println(bottle1.displayInfoOfProduct());
         // пример полиморфизма
-        Product bottle2 = new BottleOfWater("bottle2", 6.50, 1);*/
+        Product bottle2 = new BottleOfWater("bottle2", 6.50, 1);
 
         BottleOfWater b1 = new BottleOfWater("Боржоми", 5.00, 0.5);
         BottleOfWater b2 = new BottleOfWater("Святой источник", 3.50, 0.5);
@@ -30,8 +30,16 @@ public class Main {
         vendingMachine.addBottleOfWater(b3);
         vendingMachine.addBottleOfWater(b4);
         vendingMachine.addBottleOfWater(b5);
-        System.out.println(vendingMachine.getProduct("Боржоми"));
+        System.out.println(vendingMachine.getProduct("Боржоми")); */
 
+        BottleOfWater b1 = new BottleOfWater("Боржоми", 5.00, 0.5);
+        HotProduct h1 = new HotProduct("Capuchino", 5, 0.3, 90);
+        HotProduct h2 = new HotProduct("Americano", 4, 0.3, 95);
+        HotProdVendingMashine vendingMashine = new HotProdVendingMashine(new ArrayList<>());
+        vendingMashine.addHotProductToList(h1);
+        vendingMashine.addHotProductToList(h2);
+
+        System.out.println(vendingMashine.getProduct("Capuchino"));
+        }
 
     }
-}
